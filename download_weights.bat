@@ -15,10 +15,6 @@ mkdir %CheckpointsDir%\whisper
 
 :: Install required packages
 pip install -U "huggingface_hub[hf_xet]"
-
-:: Set HuggingFace endpoint
-set HF_ENDPOINT=https://hf-mirror.com
-
 :: Download MuseTalk weights
 hf download TMElyralab/MuseTalk --local-dir %CheckpointsDir%
 
